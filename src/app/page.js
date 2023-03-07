@@ -9,7 +9,6 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '800
 export default function Home() {
   return (
     <main className={poppins.className}>
-      
       <div className=" gradient relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
 
         <Navbar />

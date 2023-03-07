@@ -4,6 +4,7 @@ import React from 'react'
 import Card from '../components/Card'
 import styles from '../styles/styles'
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
 const Features = () => {
   return (
@@ -31,16 +32,28 @@ const Features = () => {
         </div>
         <div className='flex flex-row items-center justify-between my-52'>
             <div>
-             <img src="/iphone.svg" className=' w-[300%]' style={{transform:'scale(3)'}}/> 
+             <motion.img
+             initial={{ opacity: 0 }}
+             animate={{opacity: 1}}
+             transition={{duration: 0.6}}
+            
+
+             priority={true}
+             src="/iphone.svg" style={{transform:'scale(2.7)'}} 
+             width={400}
+             height={400}
+
+             /> 
             </div>
             <div className=' grid grid-rows-3 grid-cols-1 gap-10 pl-[33rem]'>
 
                 <motion.div
                 
-                initial={{ y: 100, x: -950 ,scale: 0.6, opacity: 0.6 }}
+                layout
+                initial={{ y: 100, x: -950 ,scale: 0.6, opacity: 0 }}
                 whileInView={{ y: 0, x: 0, scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
+
 
                 >
                     <Card title="Accessibilty" content="Easily accessible within any app" icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" class="w-6 h-6">
@@ -51,10 +64,11 @@ const Features = () => {
                 </motion.div>
                 <motion.div
                 
-                initial={{ y: 0, x: -950 ,scale: 0.6, opacity: 0.6 }}
+                layout
+                initial={{ y: 0, x: -950 ,scale: 0.6, opacity: 0 }}
                 whileInView={{ y: 0, x: 0, scale: 1, opacity: 1 }}
                 transition={{ duration: 1.4}}
-                viewport={{ once: true }}
+
                 
                 >
                     <Card title="Voice Control" content="Supports Voice Assistant" icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" class="w-6 h-6">
@@ -64,10 +78,11 @@ const Features = () => {
                 </motion.div>
                 <motion.div
                 
-                initial={{ y: -100, x: -950 ,scale: 0.6, opacity: 0.6 }}
+                layout
+                initial={{ y: -100, x: -950 ,scale: 0.6, opacity: 0 }}
                 whileInView={{ y: 0, x: 0, scale: 1, opacity: 1 }}
                 transition={{ duration: 2}}
-                viewport={{ once: true }}
+
 
                 >
                     <Card title="All languages" content="Available in every language" icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" class="w-6 h-6">
