@@ -29,6 +29,7 @@
 .image{
   z-index: 10;
   position: absolute;
-  left: -9%;
+  right: 12.8%;
+  overflow:hidden;
 
 }

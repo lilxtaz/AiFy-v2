@@ -1,5 +1,6 @@
 import { Poppins } from 'next/font/google'
 import Navbar from '../../components/Navbar'
+import Features from '../../sections/Features'
 import Hero from '../../sections/Hero'
 import '../../styles/globals.css'
 
@@ -13,9 +14,11 @@ export default function Home() {
 
         <Navbar />
         <Hero />
-
       </div>
 
+      <div className='relative'>
+        <Features />
+      </div>
 
     </main>
   )
