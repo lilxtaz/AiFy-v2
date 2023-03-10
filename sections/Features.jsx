@@ -39,7 +39,7 @@ const Features = () => {
             
 
              priority={true}
-             src="/iphone.png" style={{transform:'scale(1.3)'}} 
+             src="/iphone.png" style={{transform:'scale(1.7)'}} 
              className='pl-4'
              width={400}
              height={400}
