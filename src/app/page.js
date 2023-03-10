@@ -7,6 +7,8 @@ import History from '../../sections/History'
 import '../../styles/globals.css'
 import Stats from '../../sections/Stats'
 import Download from '../../sections/Download'
+import FAQ from '../../sections/FAQ'
+import Footer from '../../sections/Footer'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '300', '400', '500', '600', '800'] })
 
@@ -14,7 +16,7 @@ export default function Home() {
   return (
     <main className={poppins.className}>
 
-      <div className=" gradient relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
+      <div className=" bg-[url('../public/bg-header.png')] relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
 
         <Navbar />
         <Hero />
@@ -46,7 +48,17 @@ export default function Home() {
 
       </div>
 
-      <div className='h-screen'></div>
+      <div>
+
+        <FAQ />
+
+      </div>
+
+      <div>
+
+        <Footer />
+
+      </div>
  
     </main>
   )

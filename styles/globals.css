@@ -15,6 +15,12 @@
 
 }
 
+.footer-gradient{
+
+  background: linear-gradient(136.43deg, #262626 10.32%, #000000 52.29%);
+
+}
+
 .head{
 
   font-size: 96px;

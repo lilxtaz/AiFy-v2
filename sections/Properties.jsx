@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion, easeIn, easeOut } from 'framer-motion'
 const Properties = () => {
 
     let { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [0, 0.67], [600 , 0], easeOut)
+    const x = useTransform(scrollYProgress, [0, 0.35], [600 , 0], easeOut)
 
   return (
     <div className={`${styles.xPaddings} flex px-64 flex-col items-center justify-center text-center bg-[url('../public/bg-props-test.png')] bg-fixed bg-center bg-cover overflow-hidden`}>

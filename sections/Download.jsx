@@ -1,5 +1,6 @@
 "use client"
 
+import Link from 'next/link'
 import React from 'react'
 import styles from '../styles/styles'
 
@@ -21,14 +22,17 @@ const Download = () => {
                 Be it everyday use or professional work. Just select the text and press AiFy.
 
             </h3>
-
-            <div className=' absolute bottom-[14%] left-[11.7%]'>
+            <Link href='https://play.google.com/store/apps/details?id=com.textaify&hl=en&gl=US' target='_blank'>
+            <div className=' absolute bottom-[14%] left-[11.7%]  cursor-pointer'>
                 <img src='/play.png' alt='' width={258} />
+                
             </div>
+            </Link>
 
         </div>
 
         <div>
+            
             <div className='absolute top-[42%] right-[-7%]  h-[64rem] w-[64rem] rounded-full bg-true-gray opacity-10'></div>
             <img
                 
@@ -39,8 +43,10 @@ const Download = () => {
                 className='absolute top-[6%] right-[12.5%] rotate-6 scale-150'
 
             /> 
+            
 
         </div>
+         
 
     </div>
     </div>

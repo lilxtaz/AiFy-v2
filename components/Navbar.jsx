@@ -18,7 +18,7 @@ const Navbar = () => {
                 className={`${styles.iconsStyles} pb-3`} 
                 width={96}
             />
-            <div className="font-thin text-[24px] text-black flex items-center justify-center leading-7  ">
+            <div className="font-thin text-[24px] text-white flex items-center justify-center leading-7  ">
 
                 <Link href='/black' className='mx-6 font-medium cursor-pointer'>Home</Link>
                 <Link href='/white' className='mx-6 font-medium cursor-pointer'>About Us</Link>
