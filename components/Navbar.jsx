@@ -19,9 +19,9 @@ const Navbar = () => {
               />
             <div className="font-thin text-[20px] text-white sm:hidden md:hidden lg:block">
 
-                <Link href='/black' className='mx-6 font-medium cursor-pointer'>Home</Link>
-                <Link href='/white' className='mx-6 font-medium cursor-pointer'>About</Link>
-                <Link href='/grey' className='mx-6 font-medium cursor-pointer'>Contact</Link>
+                <Link href='/' className='mx-6 font-medium cursor-pointer'>Home</Link>
+                <Link href='https://play.google.com/store/apps/dev?id=8531856831217972580&hl=en&gl=US' target='_blank' className='mx-6 font-medium cursor-pointer'>About</Link>
+                <Link href='mailto:info@textaify.com' className='mx-6 font-medium cursor-pointer'>Contact</Link>
             </div>
             <div className='sm:hidden md:hidden lg:block'>
               <Link href='https://play.google.com/store/apps/details?id=com.textaify&hl=en&gl=US' target='_blank'>
