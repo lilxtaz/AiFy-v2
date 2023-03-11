@@ -38,7 +38,7 @@ const ScrollToTop = () => {
 
   return (
     <div>
-    {showScrollTopButton && <BsChevronUp className=' fixed bottom-8 right-10 h-10 w-10 rounded-full bg-white text-black cursor-pointer z-50 p-2 border-true-gray border-[1px] hover:scale-105 hover:bg-pink-50' onClick={scrollTop} />}
+    {showScrollTopButton && <BsChevronUp className=' fixed bottom-8 right-10 h-10 w-10 rounded-full bg-white text-black cursor-pointer z-50 p-2 border-true-gray border-[1px] hover:scale-105 hover:bg-true-gray-100' onClick={scrollTop} />}
     </div>
   )
 }
