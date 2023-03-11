@@ -20,7 +20,7 @@ const Navbar = () => {
             <div className="font-thin text-[20px] text-white sm:hidden md:hidden lg:block">
 
                 <Link href='/black' className='mx-6 font-medium cursor-pointer'>Home</Link>
-                <Link href='/white' className='mx-6 font-medium cursor-pointer'>About Us</Link>
+                <Link href='/white' className='mx-6 font-medium cursor-pointer'>About</Link>
                 <Link href='/grey' className='mx-6 font-medium cursor-pointer'>Contact</Link>
             </div>
             <div className='sm:hidden md:hidden lg:block'>
