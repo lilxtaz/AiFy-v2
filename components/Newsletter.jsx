@@ -1,12 +1,17 @@
 "use client"
 
-import React from 'react'
+import React, {useState} from 'react'
+import Popup from '../components/Popup'
+import MailchimpFormContainer from '../components/MailchimpFormContainer'
 
 const Buttons = (props) => {
+
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
     <div class='flex items-center justify-center font-extrabold'>
     <div class="flex items-center justify-center bg-transparent rounded">
-        <button class='relative inline-flex text-lg sm:text-[1rem] rounded-full font-medium tracking-wider border-[1px] border-transparent transition-colors outline-transparent focus:outline-transparent  disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        <button onClick={()=> setButtonPopup(true)} class='relative inline-flex text-lg sm:text-[1rem] rounded-full font-medium tracking-wider border-[1px] border-transparent transition-colors outline-transparent focus:outline-transparent  disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
         text-black bg-white hover:bg-gray-600 hover:text-white focus:border-[#FFFFFF] focus:bg-[#383838] px-4 py-2 sm:py-2 sm:px-6'>
 
             <div className='pr-4 pb-[2px]'>
@@ -21,6 +26,14 @@ const Buttons = (props) => {
             </div>
             
         </button>
+    </div>
+    <div >
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+
+        <MailchimpFormContainer />
+
+      </Popup>
+
     </div>
 </div>
   )

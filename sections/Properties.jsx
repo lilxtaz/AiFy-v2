@@ -1,17 +1,30 @@
 "use client"
 
-import React from 'react'
+import React, {useEffect} from 'react'
 import Box from '../components/Box'
 import styles from '../styles/styles'
-import { useScroll, useTransform, motion, easeIn, easeOut } from 'framer-motion'
+import { useScroll, useTransform, motion, easeOut } from 'framer-motion'
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-const Properties = () => {
+const Properties = React.forwardRef(() => {
 
     let { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [0, 0.38], [600 , 0], easeOut)
+    let x;
+
+    const matches = useMediaQuery('(max-width:1024px)');
+
+    if(matches){
+
+        x = useTransform(scrollYProgress, [0, 0.3], [600 , 0], easeOut)
+
+    }else{
+
+       x = useTransform(scrollYProgress, [0, 0.4], [600 , 0], easeOut)
+
+    }
 
   return (
-    <div className={`${styles.xPaddings} flex px-[10%] pb-[10vh] flex-col items-center justify-center text-center bg-[url('../public/bg-props-test.png')] bg-fixed bg-center bg-cover overflow-hidden`}>
+    <div className={`${styles.xPaddings} flex px-[10%] pb-[10vh] flex-col items-center justify-center text-center xl:bg-[url('../public/bg-props-test.png')] sm:bg-gradient-to-tr from-header-from to-header-to bg-fixed bg-center bg-cover overflow-hidden`}>
 
         <div className='flex flex-row items-center justify-center  py-20'>
             <h1 className=' text-text-color font-medium text-5xl '> 
@@ -44,5 +57,6 @@ const Properties = () => {
     </div>
   )
 }
+)
 
 export default Properties
