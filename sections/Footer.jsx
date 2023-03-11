@@ -1,13 +1,17 @@
 "use client"
 
-import React from 'react'
+import React, { useState} from 'react'
 import styles from '../styles/styles'
 import Newsletter from '../components/Newsletter'
 import Link from 'next/link'
 import * as SiIcons from 'react-icons/si'
 import * as AiIcons from 'react-icons/ai'
 
+
 const Footer = () => {
+
+
+
   return (
     <div className={`${styles.xPaddings} flex flex-col pt-10 pb-6 lg:px-[10vw] sm:px-[5vw]  items-center justify-between text-center footer-gradient`}>
 
@@ -16,9 +20,10 @@ const Footer = () => {
         <div className=' lg:w-1/2 sm:w-[100%] text-left flex flex-col lg:items-start sm:items-center sm:justify-center lg:justify-start'>
 
           <h1 className='text-white text-5xl font-semibold my-10 lg:text-left sm:text-center'>Join the Future</h1>
-          <div>
+          <div >
 
             <Newsletter text="Sign Up to our Newsletter"/>
+            
 
           </div>
 
@@ -35,9 +40,11 @@ const Footer = () => {
               </svg>
 
             </div>
+            <Link href='mailto:info@textaify.com' target='_blank'>
             <h1  className='text-white lg:text-4xl sm:text-lg sm:underline md:mb-0 sm:mb-[7vh]'>
               Contact Us Here
             </h1>
+            </Link>
 
           </div>
         </div>
@@ -101,9 +108,6 @@ const Footer = () => {
 
         </div>
       </div>
-
-
-
 
     </div>
   )
