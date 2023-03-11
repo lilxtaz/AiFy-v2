@@ -16,10 +16,9 @@ export default function Home() {
   return (
     <main className={poppins.className}>
 
-      <div className=" bg-[url('../public/bg-header.png')] relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
-
-        <Navbar />
-        <Hero />
+      <div className="bg-[url('../public/bg-header.png')] bg-cover relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
+          <Navbar />
+          <Hero />
       </div>
 
       <div className='relative'>
