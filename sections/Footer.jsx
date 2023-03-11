@@ -9,13 +9,13 @@ import * as AiIcons from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <div className={`${styles.xPaddings} flex flex-col pt-10 pb-6 px-60  items-center justify-between text-center footer-gradient`}>
+    <div className={`${styles.xPaddings} flex flex-col pt-10 pb-6 lg:px-[10vw] sm:px-[5vw]  items-center justify-between text-center footer-gradient`}>
 
-      <div className='flex flex-row w-full'>
+      <div className='flex lg:flex-row w-full sm:flex-col'>
 
-        <div className=' w-1/2 text-left flex flex-col items-start justify-start'>
+        <div className=' lg:w-1/2 sm:w-[100%] text-left flex flex-col lg:items-start sm:items-center sm:justify-center lg:justify-start'>
 
-          <h1 className='text-white text-5xl font-semibold my-10'>Join the Future</h1>
+          <h1 className='text-white text-5xl font-semibold my-10 lg:text-left sm:text-center'>Join the Future</h1>
           <div>
 
             <Newsletter text="Sign Up to our Newsletter"/>
@@ -24,18 +24,20 @@ const Footer = () => {
 
         </div>
 
-        <div className=' w-1/2'>
+        <div className='lg:w-1/2 sm:w-100'>
 
-          <div className='flex flex-row justify-end items-center mt-[8.4rem]'>
-            <div>
+          <div className='flex lg:flex-row lg:justify-end sm:justify-center sm:flex-col items-center lg:mt-[8.4rem] sm:mt-[2vh]'>
+            <div className='lg:block sm:hidden'>
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-11 h-11 mr-2">
-              <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
-              <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-11 h-11 mr-2">
+                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+              </svg>
 
             </div>
-            <h1  className='text-white text-4xl'>Contact Us Here</h1>
+            <h1  className='text-white lg:text-4xl sm:text-lg sm:underline md:mb-0 sm:mb-[7vh]'>
+              Contact Us Here
+            </h1>
 
           </div>
         </div>
