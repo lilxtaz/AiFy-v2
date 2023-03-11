@@ -4,7 +4,7 @@ import styles from '../styles/styles'
 
 const History = () => {
   return (
-    <div className={`${styles.xPaddings} flex pt-28 px-60 flex-col items-center justify-center text-center`}>
+    <div className={`${styles.xPaddings} flex pt-28 lg:px-[10%] sm:px-0 flex-col items-center justify-center text-center`}>
 
         <Crossboard title="History" img="/phone.png" content="I store all the messages on your local storage discarding the worry of data privacy being compromised. You can rollback to your previous responses with just a click." icon={
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#463853" className="w-11 h-11 hover:bounceOrig transition-all duration-1000">
