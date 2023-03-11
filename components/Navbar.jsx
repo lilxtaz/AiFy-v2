@@ -8,28 +8,24 @@ import Buttons from './Buttons'
 
 const Navbar = () => {
   return (
-    <nav className={`px-64 py-16 relative`}>
+    <nav className={`flex lg:justify-between items-center py-[2vh] sm:justify-center lg:pr-40 md:pr-0 sm:pr-0`}>
 
-        <div className=" w-[50%] inset-0 gradient-01" />
-            <div className={`${styles.innerWidth} m-auto flex justify-between items-center gap-8`}>
-            <img
-                src="/logo.svg"
-                alt="logo"
-                className={`${styles.iconsStyles} pb-3`} 
-                width={96}
-            />
-            <div className="font-thin text-[24px] text-white flex items-center justify-center leading-7  ">
+        <div className="gradient-01" />
+              <img
+                  src="/logo.svg"
+                  alt="logo"
+                  className={`${styles.iconsStyles}`} 
+                  width={96}
+              />
+            <div className="font-thin text-[20px] text-white sm:hidden md:hidden lg:block">
 
                 <Link href='/black' className='mx-6 font-medium cursor-pointer'>Home</Link>
                 <Link href='/white' className='mx-6 font-medium cursor-pointer'>About Us</Link>
                 <Link href='/grey' className='mx-6 font-medium cursor-pointer'>Contact</Link>
             </div>
-            <Buttons text='Get App'/>
-            
+            <div className='sm:hidden md:hidden lg:block'>
+              <Buttons text='Get App'/>
             </div>
-
-        
-
     </nav>
   )
 }

@@ -23,22 +23,20 @@
 
 .head{
 
-  font-size: 96px;
-  padding-left: 20%;
+  font-size: clamp(60px, 40vw, 96px);
   font-weight: 600;
-  padding-bottom: 200px;
-  line-height: 124px;
+  line-height: 1;
   padding-top: 1rem;
+  width: 70%;
+  z-index: 20;
 
 }
 
 .image{
-  z-index: 10;
+  z-index: 2;
   position: absolute;
-  right: 6%;
-  overflow:hidden;
-  top: 24.3%;
-
+  right: 0px;
+  top: 15%;
 }
 
 @keyframes bounceOrig {

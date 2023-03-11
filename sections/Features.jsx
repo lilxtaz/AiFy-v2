@@ -7,46 +7,46 @@ import {motion} from "framer-motion"
 
 const Features = () => {
   return (
-    <div className={`${styles.xPaddings} flex mt-44 px-72 flex-col items-center justify-center text-center`}>
-        <div className='flex flex-row items-center justify-center'>
-        <h1 className=' text-teal-600 font-medium text-7xl pr-5 opacity-80'>ChatGPT 
+    <div className={`${styles.xPaddings} flex mt-44 px-[10vw] flex-col items-center justify-center text-center`}>
+        <div className='flex lg:flex-row sm:flex-col items-center justify-center '>
+            <h1 className=' text-teal-600 font-medium text-7xl opacity-80'>ChatGPT 
 
-        </h1>
-        <img src="/chatgpt-icon.svg" className=' w-[7%] pr-4'/>
-        <h1 className={` font-medium text-5xl  text-text-color `}>
+            </h1>
+            <img src="/chatgpt-icon.svg" className='w-[128px] px-7'/>
+            <h1 className={` font-medium text-5xl text-text-color `}>
 
-            now at your fingertips
+                now at your fingertips
 
-        </h1>
+            </h1>
         </div>
-        <div className='flex flex-row items-center justify-center text-text-lighter font-medium py-8 px-72'>
+        <div className='text-text-lighter font-medium py-[5vh] lg:px-[20%] md:px-[0px] sm:px-0'>
 
             <h3 className={` text-xl  leading-8`}>
 
-            Need help with spelling, grammar, translation, or finding the right words?
+            Need help with spell, grammar, translation, or finding the right words?
             I'm always just a tap away, available anytime in all your apps.
 
             </h3>    
 
         </div>
         <div className='flex flex-row items-center justify-between my-52'>
-            <div>
-             <motion.img
-             initial={{ opacity: 0.3 }}
-             animate={{opacity: 1}}
-             transition={{duration: 0.6}}
-             
-            
+            <div >
+                <motion.img
+                initial={{ opacity: 0.3 }}
+                animate={{opacity: 1}}
+                transition={{duration: 0.6}}
+                
+                
 
-             priority={true}
-             src="/iphone.png" style={{transform:'scale(1.7)'}} 
-             className='pl-4'
-             width={400}
-             height={400}
+                priority={true}
+                src="/iphone.png" style={{transform:'scale(1.7)'}} 
+                className='pl-0 w-50 md:hidden sm:hidden lg:flex'
+                width={400}
+                height={400}
 
-             /> 
+                /> 
             </div>
-            <div className=' grid grid-rows-3 grid-cols-1 gap-10 pl-[24rem]'>
+            <div className=' grid grid-rows-3 grid-cols-1 gap-10 md:w-[80vw] sm:w-[80vw] lg:pl-[20%] md:pl-0 sm:pl-0'>
 
                 <motion.div
                 
@@ -58,10 +58,11 @@ const Features = () => {
 
 
                 >
-                    <Card title="Accessibilty" content="I am available in any app. Just highlight the text and select me as the pop-up." icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" class="w-6 h-6 hover:bounceOrig transition-all">
-                        <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
-                        </svg>
-                    }/>
+                
+                <Card title="Accessibilty" content="I am available in any app. Just highlight the text and select me as the pop-up." icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" class="w-6 h-6 hover:bounceOrig transition-all">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+                    </svg>
+                }/>
                     
                 </motion.div>
                 <motion.div
@@ -74,11 +75,11 @@ const Features = () => {
 
                 
                 >
-                    <Card title="Voice Control" content="I also have a voice and can serve as your assistant." icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" className="w-6 h-6 hover:bounceOrig transition-all duration-1000">
-                        <path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" />
-                        <path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" />
-                        </svg>
-                    }/>
+                <Card title="Voice Control" content="I also have a voice and can serve as your assistant." icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#998da0" className="w-6 h-6 hover:bounceOrig transition-all duration-1000">
+                    <path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" />
+                    <path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" />
+                    </svg>
+                }/>
                 </motion.div>
                 <motion.div
                 

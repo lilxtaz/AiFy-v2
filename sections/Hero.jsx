@@ -6,14 +6,14 @@ import styles from '../styles/styles'
 
 const Hero = () => {
   return (
-    <div className={`${styles.xPaddings} flex `}>
-        <img src="/phone_1.png" className='image'/>
-        <div className={`  flex flex-col z-10`}>
-        <h1 className={`${styles.heroHeading} head `} >Be the Ultimate Rizzler with <br /> AiFy</h1>
-        <div className=' absolute bottom-[4%] left-[16%]'>
-        <Started text='Get Started'/>
+    <div className={`flex px-[10vw] md:py-[12vh] md:pb-[30vh] sm:pb-[30vh] sm:py-[0vh]`}>
+        <div className={`flex flex-col z-10`}>
+          <h1 className={`${styles.heroHeading} head sm:pb-[0vh]`} >Be the Ultimate Rizzler with <br /> AiFy</h1>
+          <div className=' absolute md:bottom-[4%] md:left-[10%] sm:bottom-[10%]'>
+            <Started text='Get Started'/>
+          </div>
         </div>
-        </div>
+        <img src="/phone_1.png" className='image lg:opacity-100 sm:opacity-50 lg:filter-none sm:filter blur-sm brightness-50'/>
     </div>
   )
 }

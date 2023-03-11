@@ -8,18 +8,18 @@ import { useScroll, useTransform, motion, easeIn, easeOut } from 'framer-motion'
 const Properties = () => {
 
     let { scrollYProgress } = useScroll();
-    const x = useTransform(scrollYProgress, [0, 0.35], [600 , 0], easeOut)
+    const x = useTransform(scrollYProgress, [0, 0.4], [600 , 0], easeOut)
 
   return (
-    <div className={`${styles.xPaddings} flex px-64 flex-col items-center justify-center text-center bg-[url('../public/bg-props-test.png')] bg-fixed bg-center bg-cover overflow-hidden`}>
+    <div className={`${styles.xPaddings} flex px-[10%] pb-[10vh] flex-col items-center justify-center text-center bg-[url('../public/bg-props-test.png')] bg-fixed bg-center bg-cover overflow-hidden`}>
 
-    <div className='flex flex-row items-center justify-center  py-20'>
-        <h1 className=' text-text-color font-medium text-5xl '> 
-            Wield the Power of AI
-        </h1>
-    </div>
+        <div className='flex flex-row items-center justify-center  py-20'>
+            <h1 className=' text-text-color font-medium text-5xl '> 
+                Wield the Power of AI
+            </h1>
+        </div>
 
-    <div className='grid grid-cols-3 grid-rows-1 gap-44 pb-28 '>
+    <div className='flex flex-wrap justify-center lg:gap-[1vw] md:gap-[5vh] sm:gap-[5vh] lg:flex-row md:flex-col sm:flex-col '>
             <motion.div style={{x}}>
             <Box title="GPT 3.5 Turbo" content="OpenAI's GPT-3.5-turbo model powers me that generates instant responses to user input." icon={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6b4473" className="w-8 h-8 hover:bounceOrig transition-all duration-1000">
                 <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clipRule="evenodd" />
