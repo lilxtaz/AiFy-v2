@@ -48,7 +48,7 @@ const Footer = () => {
 
         <div className=' w-full flex flex-row justify-start items-center mt-14 '>
 
-          <div className=' grid grid-cols-3 grid-rows-1 gap-20'>
+          <div className=' lg:grid grid-cols-3 grid-rows-1 gap-x-20 gap-y-5 sm:hidden'>
 
             <Link href='#'>
 
@@ -70,9 +70,9 @@ const Footer = () => {
 
           
           </div>
-          <div className='w-full flex flex-row justify-end items-end mt-1 text-white'>
+          <div className='w-full lg:flex flex-row lg:justify-end sm:justify-between lg:items-end sm:items-center sm:pl-9 mt-1 text-white'>
 
-          <div className=' grid grid-cols-4 grid-rows-1 gap-4'>
+          <div className=' grid grid-cols-4 grid-rows-1 gap-x-4 gap-y-2'>
 
             <SiIcons.SiGmail className='text-white mt-[0.1rem]' size='24px'/>
             <AiIcons.AiOutlineTwitter className='text-white' size='28px' />

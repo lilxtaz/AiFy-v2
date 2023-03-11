@@ -4,7 +4,7 @@ import React from 'react'
 
 const Props = (props) => {
   return (
-    <div className="flex items-center w-[350px]">
+    <div className="flex items-center 2xl:w-[350px] sm:w-[350px] lg:w-[310px]">
         <div className="group relative mx-auto overflow-hidden rounded-[16px] bg-gray-300 p-[1px] transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
             <div className="group-hover:animate-spin-slow invisible absolute -top-40 -bottom-40 left-10 right-10 bg-gradient-to-r from-transparent via-white/90 to-transparent group-hover:visible"></div>
             <div className="relative rounded-[15px] bg-white p-6">

@@ -6,7 +6,7 @@ const Stats = () => {
   return (
     <div className={`${styles.xPaddings} flex pt-28 lg:px-[10vw] flex-col items-center justify-center text-center`}>
         
-        <div className='flex flex-wrap justify-center items-center gap-5 pb-20'>
+        <div className='flex flex-wrap justify-center items-center sm:gap-5 lg:gap-[5vw] 2xl:gap-[10vw]  pb-20'>
         <Props title='5K+ Users' content='The AiFy community is exponentially increasing everyday. Join in on the ride and be a part of the future.' icon={<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#463853" className="w-10 h-10">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
         </svg>

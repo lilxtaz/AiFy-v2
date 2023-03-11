@@ -39,7 +39,7 @@ const Download = () => {
                     width={400}
                     height={400}
 
-                    className='absolute top-[6%] right-[12.5%] rotate-6 scale-150'
+                    className='absolute 2xl:top-[12%] lg:top-[26%] right-[12.5%] rotate-6 scale-150'
 
                 /> 
                 

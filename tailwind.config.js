@@ -33,6 +33,13 @@ module.exports = withMT({
                 'spin-slow': 'spin 5s linear infinite',
       },
 
+      screens: {
+
+        'sm': '350px',
+        '2xl': '1440px',
+
+      },
+
     },
   },
   plugins: [],

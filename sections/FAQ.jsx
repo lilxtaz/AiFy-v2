@@ -18,10 +18,10 @@ export default function FAQ() {
  
   return (
     <div className={`lg:px-[10vw] sm:px-[5vw] pt-32 pb-44 flex flex-wrap lg:flex-row items-center justify-between text-left relative sm:flex-col`}>
-      <div className=" lg:w-2/5 sm:w-100 mb-20 sm:text-center flex flex-col">
+      <div className=" lg:w-1/5 sm:w-100 mb-20 sm:text-center lg:text-left flex flex-col">
 
           <h3 className=" text-true-gray-100 text-xl font-medium mb-6" >FAQs</h3>
-          <h1 className=" text-6xl font-medium text-text-color leading-snug">Frequently Asked Questions</h1>
+          <h1 className=" 2xl:text-6xl lg:text-5xl font-medium text-text-color leading-snug">Frequently Asked Questions</h1>
 
       </div>
       <div className=" lg:w-3/5 min-h-full sm:w-100">
@@ -38,7 +38,7 @@ export default function FAQ() {
         </Accordion>
         <Accordion open={open === 2}>
           <AccordionHeader onClick={() => handleOpen(2)}>
-              <p className="text-text-color hover:text-black text-2xl opacity-80 font-semibold"> Why are there ads?</p>
+              <p className="text-text-color hover:text-black text-2xl opacity-80 font-semibold"> Why are there advertisments?</p>
             </AccordionHeader>
             <AccordionBody>
               <p className=" text-text-lighter text-lg leading-relaxed">
@@ -149,7 +149,7 @@ export default function FAQ() {
         
       </Fragment>
 
-      <div className=" flex lg:flex-row sm:flex-col pt-5 ">
+      <div className=" flex 2xl:flex-row lg:flex-col sm:flex-col pt-5 ">
 
         <div className="flex">
 

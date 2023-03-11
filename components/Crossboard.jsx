@@ -10,7 +10,7 @@ const Crossboard = (props) => {
   return (
     <div className={` bg-[url('../public/crossboard.png')] bg-blend-soft-light flex flex-row justify-around   px-[10%] py-[2.5rem] rounded-2xl transition-all duration-150 w-full relative  overflow-hidden`} style={{ boxShadow: '0 5px 10px 0 rgb(10 10 10 / 5%)', borderColor: 'transparent'}}>
 
-        <div className=' absolute w-[33.3%] left-[5%] -rotate-12 top-[30%] md:block sm:hidden'>
+        <div className=' absolute w-[33.3%] left-[5%] -rotate-12 2xl:top-[6%] top-[30%] md:block sm:hidden'>
 
             <img src={props.img} />
 

@@ -8,7 +8,7 @@ import Buttons from './Buttons'
 
 const Navbar = () => {
   return (
-    <nav className={`flex lg:justify-between items-center py-[2vh] sm:justify-center lg:pr-40 md:pr-0 sm:pr-0`}>
+    <nav className={`flex lg:justify-between items-center py-[2vh] sm:justify-center 2xl:pr-[15%] lg:pr-40 md:pr-0 sm:pr-0`}>
 
         <div className="gradient-01" />
               <img
@@ -24,7 +24,9 @@ const Navbar = () => {
                 <Link href='/grey' className='mx-6 font-medium cursor-pointer'>Contact</Link>
             </div>
             <div className='sm:hidden md:hidden lg:block'>
+              <Link href='https://play.google.com/store/apps/details?id=com.textaify&hl=en&gl=US' target='_blank'>
               <Buttons text='Get App'/>
+              </Link>
             </div>
     </nav>
   )
