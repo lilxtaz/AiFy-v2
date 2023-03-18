@@ -1,10 +1,10 @@
 import { Poppins } from "next/font/google";
-import "../../../styles/globals.css";
-import ScrollToTop from "../../../components/ScrollToTop";
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../sections/Footer";
-import AboutHero from "../../../sections/AboutHero";
-import BlogSection from "../../../sections/BlogSection";
+// import "../../styles/globals.module.css";
+import ScrollToTop from "../../components/ScrollToTop";
+import Navbar from "../../components/Navbar";
+import Footer from "../../sections/Footer";
+import AboutHero from "../../sections/AboutHero";
+import BlogSection from "../../sections/BlogSection";
 
 const poppins = Poppins({
   subsets: ["latin"],
