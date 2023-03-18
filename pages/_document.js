@@ -7,9 +7,8 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="./favicon.ico" />
         <Script
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
           type="text/javascript"
-          async
           src="https://www.googletagmanager.com/gtag/js?id=G-D9D8FHXVNY"
         ></Script>
         <Script strategy="beforeInteractive" type="text/javascript">
