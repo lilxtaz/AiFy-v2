@@ -6,18 +6,19 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="./favicon.ico" />
-        <script
+        <Script
+          strategy="beforeInteractive"
           type="text/javascript"
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-D9D8FHXVNY"
-        ></script>
-        <script type="text/javascript">
+        ></Script>
+        <Script strategy="beforeInteractive" type="text/javascript">
           {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-D9D8FHXVNY');`}
-        </script>
+        </Script>
       </Head>
       <body>
         <div id="fb-root"></div>
