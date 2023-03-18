@@ -8,10 +8,9 @@ export default function Document() {
         <link rel="shortcut icon" href="./favicon.ico" />
         <Script
           strategy="afterInteractive"
-          type="text/javascript"
           src="https://www.googletagmanager.com/gtag/js?id=G-D9D8FHXVNY"
         ></Script>
-        <Script strategy="beforeInteractive" type="text/javascript">
+        <Script id="google-analytics" strategy="afterInteractive">
           {` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
