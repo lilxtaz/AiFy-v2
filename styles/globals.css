@@ -47,6 +47,28 @@
 
 }
 
+.about-head{
+
+  font-size: clamp(60px, 100%, 96px);
+  color: black;
+  font-weight: 600;
+  line-height: 1;
+  padding-top: 1rem;
+  z-index: 20;  
+
+}
+
+.about-subhead{
+
+  font-size: clamp(20px, 100%, 38px);
+  color: #7c838a;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 1rem;
+  z-index: 20;  
+
+}
+
 .image{
   z-index: 2;
   position: absolute;

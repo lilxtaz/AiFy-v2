@@ -13,6 +13,9 @@ import ScrollToTop from '../../components/ScrollToTop'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '300', '400', '500', '600', '800'] })
 
+//text-color
+//white
+
 export default function Home() {
   return (
     <main className={poppins.className}>
@@ -20,7 +23,7 @@ export default function Home() {
       <ScrollToTop />
 
       <div className="bg-[url('../public/bg-header.png')] bg-cover relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
-          <Navbar />
+          <Navbar color="text-white" src='\logo.svg' main={'white'} hover={'black'} textMain={'text-color'} textHover={'white'} />
           <Hero />
       </div>
 
@@ -58,7 +61,7 @@ export default function Home() {
 
       <div>
 
-        <Footer />
+        <Footer textMain={'black'} bgMain={'white'} bgHover={'gray-600'} textHover={'white'} />
 
       </div>
  

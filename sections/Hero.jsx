@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import React from 'react'
-import Started from '../components/Started'
 import styles from '../styles/styles'
 
 const Hero = () => {

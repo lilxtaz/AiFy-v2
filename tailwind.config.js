@@ -27,6 +27,7 @@ module.exports = withMT({
         'back-smoke' : '#f7f7f7',
         'true-gray' : '#808080',
         'true-gray-100' : '#949494',
+        'grayish' : '#3c4752',
       },
 
       animation: {

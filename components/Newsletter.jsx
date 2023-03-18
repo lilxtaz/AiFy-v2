@@ -11,8 +11,8 @@ const Buttons = (props) => {
   return (
     <div class='flex items-center justify-center font-extrabold'>
     <div class="flex items-center justify-center bg-transparent rounded">
-        <button onClick={()=> setButtonPopup(true)} class='relative inline-flex text-lg sm:text-[1rem] rounded-full font-medium tracking-wider border-[1px] border-transparent transition-colors outline-transparent focus:outline-transparent  disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
-        text-black bg-white hover:bg-gray-600 hover:text-white focus:border-[#FFFFFF] focus:bg-[#383838] px-4 py-2 sm:py-2 sm:px-6'>
+        <button onClick={()=> setButtonPopup(true)} class={`relative inline-flex text-lg sm:text-[1rem] rounded-full font-medium tracking-wider border-[1px] border-transparent transition-colors outline-transparent focus:outline-transparent  disabled:pointer-events-none disabled:opacity-40 disabled:hover:opacity-40 disabled:cursor-not-allowed disabled:shadow-none
+        text-${props.textMain} bg-${props.bgMain} hover:bg-gray-600 hover:text-${props.textHover} focus:border-[#FFFFFF] focus:bg-[#383838] px-4 py-2 sm:py-2 sm:px-6`}>
 
             <div className='pr-4 pb-[2px]'>
 
@@ -40,4 +40,9 @@ const Buttons = (props) => {
 }
 
 export default Buttons
+
+//black
+//white
+//gray-600
+//white
 
