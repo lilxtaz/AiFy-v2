@@ -1,38 +1,46 @@
-import { Poppins } from 'next/font/google'
-import '../../../styles/globals.css'
-import ScrollToTop from '../../../components/ScrollToTop'
-import Navbar from '../../../components/Navbar'
-import Footer from '../../../sections/Footer'
-import AboutHero from '../../../sections/AboutHero'
-import BlogSection from '../../../sections/BlogSection'
+import { Poppins } from "next/font/google";
+import "../../../styles/globals.css";
+import ScrollToTop from "../../../components/ScrollToTop";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../sections/Footer";
+import AboutHero from "../../../sections/AboutHero";
+import BlogSection from "../../../sections/BlogSection";
 
-const poppins = Poppins({ subsets: ['latin'], weight: ['100', '300', '400', '500', '600', '800'] })
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "600", "800"],
+});
 
-export default function Home() {
+export default function Blog() {
   return (
     <main className={poppins.className}>
-
       <ScrollToTop />
 
-        <div className="relative">
-          <Navbar color="text-black" src='\logo_black.svg' main={'black'} hover={'gray-600'} textMain={'white'} textHover={'text-color'}/>
-        </div>
+      <div className="relative">
+        <Navbar
+          color="text-black"
+          src="\logo_black.svg"
+          main={"black"}
+          hover={"gray-600"}
+          textMain={"white"}
+          textHover={"text-color"}
+        />
+      </div>
 
-        <div>
+      <div>
+        <AboutHero />
+      </div>
 
-          <AboutHero />
+      <div>
+        <BlogSection />
+      </div>
 
-        </div>
-
-        <div>
-
-          <BlogSection />
-
-        </div>
-
-        <Footer textMain={'black'} bgMain={'white'} bgHover={'gray-600'} textHover={'white'} />
-      
- 
+      <Footer
+        textMain={"black"}
+        bgMain={"white"}
+        bgHover={"gray-600"}
+        textHover={"white"}
+      />
     </main>
-  )
+  );
 }
