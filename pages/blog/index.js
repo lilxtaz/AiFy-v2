@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import AboutHero from "../../sections/AboutHero";
 import BlogSection from "../../sections/BlogSection";
+import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,6 +15,9 @@ const poppins = Poppins({
 export default function Blog() {
   return (
     <main className={poppins.className}>
+      <Head>
+        <title>Blog - AiFy</title>
+      </Head>
       <ScrollToTop />
 
       <div className="relative">

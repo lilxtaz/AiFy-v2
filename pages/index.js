@@ -10,6 +10,7 @@ import Download from "../sections/Download";
 import FAQ from "../sections/FAQ";
 import Footer from "../sections/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import Head from "next/head";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,6 +23,9 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className={poppins.className}>
+      <Head>
+        <title>AiFy</title>
+      </Head>
       <ScrollToTop />
 
       <div className="bg-[url('../public/bg-header.png')] bg-cover relative after:content-[''] after:absolute after:bg-white after:h-[220px] after:bottom-[-100px] after:left-0 after:right-0 after:-skew-y-6">
