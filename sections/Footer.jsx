@@ -79,7 +79,7 @@ const Footer = (props) => {
               <Link href="https://github.com/lilxtaz/AiFy-v2" target="_blank">
                 <AiIcons.AiFillGithub className="text-white" size="28px" />
               </Link>
-              <Link href="https://github.com/lilxtaz/AiFy-v2" target="_blank">
+              <Link href="https://www.instagram.com/aify.app/" target="_blank">
                 <AiIcons.AiFillInstagram className="text-white" size="28px" />
               </Link>
             </div>
